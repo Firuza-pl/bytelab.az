@@ -2,7 +2,7 @@
 
 # 
 
-# © 2025 Firuza Poladzade - bytelab.az
+# © 2025 Firuza Poladzade Jafarli - bytelab.az
 
 # \*\*All rights reserved.\*\*
 
