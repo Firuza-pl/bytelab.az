@@ -470,7 +470,7 @@
             </div>
             <section class="page-section">
                 <!-- line1 -->
-                <div  class="portfolio-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-offset="100">
+                <div class="portfolio-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-offset="100">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
                             <!-- Portfolio item 1-->
@@ -498,7 +498,7 @@
                                                 data-aos-offset="100">Travel</p>
                                         </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/travel/cover.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/travel/cover.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -513,7 +513,7 @@
                                                 data-aos-offset="100">LORDS</p>
                                         </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/iso/cover.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/iso/cover.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -533,7 +533,7 @@
                                                 data-aos-offset="100">Project 3 </p>
                                         </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/ashraf/cover.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -548,7 +548,7 @@
                                                 data-aos-offset="100">Project4</p>
                                         </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/ashraf/cover.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -563,7 +563,7 @@
                                                 data-aos-offset="100">Project5</p>
                                         </div>
                                     </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                    <img class="img-fluid" src="assets/img/portfolio/ashraf/cover.png" alt="..." />
                                 </a>
                             </div>
                         </div>
@@ -698,7 +698,7 @@
         <hr>
         <div class="container copyright text-center mt-4">
             <!-- Firuza Poladzade | ByteLab -->
-            by ByteLab &copy; Copyright 2025-2026. All Rights Reserved.
+            ByteLab &copy; Copyright 2025-2026. All Rights Reserved.
         </div>
         </div>
     </footer>
@@ -720,7 +720,8 @@
                                 <div class="card-body">
                                     <h2 class="card-title">LORDS</h2>
                                     <hr>
-                                    <p class="card-text">This project is a two-part application developed to support and
+                                    <p class="card-text" id="isoDesc">This project is a two-part application developed
+                                        to support and
                                         generate reports based on ISO standards. It enables users to enter, manage, and
                                         evaluate data efficiently while maintaining full compliance with ISO
                                         requirements. The system consists of two interconnected applications that
@@ -730,14 +731,15 @@
                                         task implementation status - Ability to attach evidence documents - Automatic
                                         email notifications to responsible persons - Implementation reports for assigned
                                         actions - Each task is automatically numbered and registered</p>
-                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                    <span style="color: red;" id="isoNote">Click on the image or videos to see them
+                                        fullscreen.
                                         Please note that the full code cannot be shared due to security reasons</span>
                                 </div>
                             </div>
-                              <div id="carouselModal1" class="carousel slide" data-ride="carousel">
+                            <div id="carouselModal1" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <!-- Image Slide -->
-                                    
+
                                     <div class="carousel-item">
                                         <a href="assets/img/portfolio/iso/content4.png" target="_blank"> <img
                                                 class="d-block w-100" src="assets/img/portfolio/iso/content4.png"
@@ -749,13 +751,13 @@
                                                 alt="Third slide">
                                         </a>
                                     </div>
-                                     <div class="carousel-item active">
+                                    <div class="carousel-item active">
                                         <a href="assets/img/portfolio/iso/content8.jpg" target="_blank">
                                             <img class="d-block w-100" src="assets/img/portfolio/iso/content8.jpg"
                                                 alt="Third slide">
                                         </a>
                                     </div>
-                                     <div class="carousel-item active">
+                                    <div class="carousel-item active">
                                         <a href="assets/img/portfolio/iso/content9.jpg" target="_blank">
                                             <img class="d-block w-100" src="assets/img/portfolio/iso/content9.jpg"
                                                 alt="Third slide">
@@ -802,54 +804,73 @@
                         <div class="col-lg-4">
                             <!-- Side widget-->
                             <div class="card mb-4">
-                                <div class="card-header">Features</div>
+                                <div class="card-header" id="isoFeature">Features</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3 tex">
                                         <li>
-                                            <i class="bi bi-journal-text me-2 text-primary"></i>Data input,
-                                            tracking, and validation based on ISO requirements
+                                            <i class="bi bi-journal-text me-2 text-primary"></i>
+                                            <span id="isoFeature1">
+                                                Data input,
+                                                tracking, and validation based on ISO requirements
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-arrow-left-right me-2 text-success"></i>Two-part
-                                            application with secure inter-communication
+                                            <i class="bi bi-arrow-left-right me-2 text-success"></i>
+                                            <span id="isoFeature2">
+                                                Two-part
+                                                application with secure inter-communication
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-lock-fill me-2 text-danger"></i>API-level
-                                            security and controlled access
+                                            <i class="bi bi-lock-fill me-2 text-danger"></i>
+                                            <span id="isoFeature3">
+                                                API-level
+                                                security and controlled access
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-clipboard-data me-2 text-warning"></i>Report
-                                            generation and evaluation tools
+                                            <i class="bi bi-clipboard-data me-2 text-warning"></i> <span
+                                                id="isoFeature4">
+                                                Report
+                                                generation and evaluation tools
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-diagram-3-fill me-2 text-info"></i>Clear
-                                            workflow and compliance monitoring modules
+                                            <i class="bi bi-diagram-3-fill me-2 text-info"></i>
+                                            <span id="isoFeature5">
+                                                Clear
+                                                workflow and compliance monitoring modules
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card mb-4">
-                                <div class="card-header">Technologies</div>
+                                <div class="card-header" id="isoTech">Technologies</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3">
                                         <li>
-                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>
+                                            <span id="isoTech1">ASP.NET Core for backend development</span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-hdd-network me-2 text-success"></i>RESTful APIs
-                                            with secure token-based communication
+                                            <i class="bi bi-hdd-network me-2 text-success"></i>
+                                            <span id="isoTech2">RESTful APIs
+                                                with secure token-based communication</span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-boxes me-2 text-primary"></i>Entity Framework
-                                            Core (Code First)
+                                            <i class="bi bi-database-check me-2 text-info"></i>
+                                            <span id="isoTech3">
+                                                SQL Server
+                                                for structured data handling
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-database-check me-2 text-info"></i>SQL Server
-                                            for structured data handling
-                                        </li>
-                                        <li>
-                                            <i class="bi bi-shield-lock me-2 text-light"></i>Role-based
-                                            authorization and secure data access
+                                            <i class="bi bi-shield-lock me-2"></i>
+                                            <span id="isoTech4">
+                                                Role-based
+                                                authorization and secure data access
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
@@ -874,20 +895,22 @@
                             <!-- Featured blog post-->
                             <div class="card mb-4">
                                 <div class="card-body">
-                                    <h2 class="card-title">Travel</h2>
+                                    <h2 class="card-title">ZiqZaq</h2>
                                     <hr>
-                                    <p class="card-text">This project is a robust backend system developed to power a
+                                    <p class="card-text" id="travelDesc">This project is a robust backend system
+                                        developed to power a
                                         travel platform enabling efficient management of destinations, bookings, and
                                         user data. Designed with clean architecture principles, it provides secure and
                                         scalable API services to support multiple client applications. The system
                                         focuses on reliable data processing, authentication, and business logic
                                         implementation, ensuring seamless integration with front-end clients or
                                         third-party services.</p>
-                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                    <span style="color: red;" id="travelNote">Click on the image or videos to see them
+                                        fullscreen.
                                         Please note that the full code cannot be shared due to security reasons</span>
                                 </div>
                             </div>
-                               <div id="carouselModal2" class="carousel slide" data-ride="carousel">
+                            <div id="carouselModal2" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <!-- Image Slide -->
                                     <div class="carousel-item">
@@ -942,58 +965,83 @@
                         <div class="col-lg-4">
                             <!-- Side widget-->
                             <div class="card mb-4">
-                                <div class="card-header">Features</div>
+                                <div class="card-header" id="travelFeature">Features</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3">
                                         <li>
-                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>Search and filter
-                                            destinations with detailed travel information
+                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                                            <span id="travelFeature1">
+                                                Search and filter
+                                                destinations with detailed travel information
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-person-circle me-2 text-danger"></i>Secure user
-                                            authentication and profile management
+                                            <i class="bi bi-person-circle me-2 text-danger"></i>
+                                            <span id="travelFeature2">Secure user
+                                                authentication and profile management</span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-shield-lock me-2 text-warning"></i>JWT-based token
-                                            authentication ensuring secure API access
+                                            <i class="bi bi-shield-lock me-2 text-warning"></i>
+                                            <span id="travelFeature3">
+                                                JWT-based token
+                                                authentication ensuring secure API access
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>Responsive design with a
-                                            clean and intuitive user interface
+                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>
+                                            <span id="travelFeature4">
+                                                Responsive design with a
+                                                clean and intuitive user interface
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card mb-4">
-                                <div class="card-header">Technologies</div>
+                                <div class="card-header" id="travelTech">Technologies</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3">
                                         <li>
-                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core for backend
-                                            development
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>
+                                            <span id="travelTech1">
+                                                ASP.NET Core for backend
+                                                development
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-database me-2 text-primary"></i>Entity Framework Core (Code
-                                            First)
+                                            <i class="bi bi-database me-2 text-primary"></i>
+                                            <span id="travelTech2">
+                                                Entity Framework Core (Code
+                                                First)
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-diagram-3 me-2 text-success"></i>SQL Server for reliable and
-                                            structured data storage
+                                            <i class="bi bi-diagram-3 me-2 text-success"></i>
+                                            <span id="travelTech3">
+                                                SQL Server for reliable and
+                                                structured data storage
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>JWT (JSON Web
-                                            Tokens) for stateless and secure authentication
+                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>
+                                            <span id="travelTech4">
+                                                JWT (JSON Web
+                                                Tokens) for stateless and secure authentication
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-box me-2 text-light"></i>Clean architecture and design
-                                            patterns for maintainable code
+                                            <i class="bi bi-box me-2"></i>
+                                            <span id="travelTech5">
+                                                Clean architecture and design
+                                                patterns for maintainable code
+                                            </span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-               
+
                 </div>
             </div>
         </div>
@@ -1015,7 +1063,8 @@
                                 <div class="card-body">
                                     <h2 class="card-title">Saffarma</h2>
                                     <hr>
-                                    <p class="card-text">This project is an online drugstore stock management
+                                    <p class="card-text" id="saffarmaDesc">This project is an online drugstore stock
+                                        management
                                         system, a modular backend solution built to power a scalable and
                                         maintainable enterprise-level application. Developed using layered
                                         Domain-Driven Design (DDD) and clean architecture principles, it
@@ -1026,11 +1075,12 @@
                                         Dockerized deployment, it ensures flexibility, maintainability, and
                                         consistency across different environments—making it well-suited for
                                         modern DevOps workflows.</p>
-                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                    <span style="color: red;" id="saffarmaNote">Click on the image or videos to see them
+                                        fullscreen.
                                         Please note that the full code cannot be shared due to security reasons</span>
                                 </div>
                             </div>
-                               <div id="carouselModal3" class="carousel slide" data-ride="carousel">
+                            <div id="carouselModal3" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <!-- Image Slide -->
                                     <div class="carousel-item active">
@@ -1114,55 +1164,75 @@
                         <div class="col-lg-4">
                             <!-- Side widget-->
                             <div class="card mb-4">
-                                <div class="card-header">Features</div>
+                                <div class="card-header" id="saffarmaFeature">Features</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3">
                                         <li>
-                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>Search and
-                                            filter destinations with detailed travel information
+                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>
+                                            <span id="saffarmaFeature1">Dockerized deployment for easy environment
+                                                setup</span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-person-circle me-2 text-danger"></i>Secure user
-                                            authentication and profile management
+                                            <i class="bi bi-person-circle me-2 text-danger"></i>
+                                            <span id="saffarmaFeature2">Administrative tools for managing users and
+                                                operations</span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-shield-lock me-2 text-warning"></i>JWT-based
-                                            token authentication ensuring secure API access
+                                            <i class="bi bi-shield-lock me-2 text-warning"></i>
+                                            <span id="saffarmaFeature3">
+                                                JWT-based token authentication ensuring secure API access
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>Responsive
-                                            design with a clean and intuitive user interface
+                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>
+                                            <span id="saffarmaFeature4">Scalable design suitable for enterprise-level
+                                                applications</span>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="card mb-4">
-                                <div class="card-header">Technologies</div>
+                                <div class="card-header" id="saffarmaTech">Technologies</div>
                                 <div class="card-body shadow-body">
                                     <ul class="list-unstyled ps-3">
                                         <li>
-                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core
-                                            for building secure, scalable APIs
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>
+                                            <span id="saffarmaTech1">
+                                                ASP.NET Core
+                                                for building secure, scalable APIs
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-database me-2 text-primary"></i>Entity Framework
-                                            Core with code-first migrations
+                                            <i class="bi bi-database me-2 text-primary"></i><span id="saffarmaTech2">
+                                                Entity Framework
+                                                Core with code-first migrations
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-diagram-3 me-2 text-success"></i>Custom logic
-                                            layer with DI and interfaces for testability
+                                            <i class="bi bi-diagram-3 me-2 text-success"></i><span id="saffarmaTech3">
+                                                Custom logic
+                                                layer with DI and interfaces for testability
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>Localization
-                                            with .resx files and culture-based routing
+                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>
+                                            <span id="saffarmaTech4">
+                                                Localization
+                                                with .resx files and culture-based routing
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-box me-2 text-light"></i>Docker &amp; Docker
-                                            Compose for containerized development
+                                            <i class="bi bi-box me-2"></i>
+                                            <span id="saffarmaTech5">
+                                                Docker &amp; Docker
+                                                Compose for containerized development
+                                            </span>
                                         </li>
                                         <li>
-                                            <i class="bi bi-cloud-arrow-up-fill"></i> Amazon S3 for scalable
-                                            object storage (file/image uploads)
+                                            <i class="bi bi-cloud-arrow-up-fill"></i>
+                                            <span id="saffarmaTech6">
+                                                Amazon S3 for scalable
+                                                object storage (file/image uploads)
                                         </li>
                                     </ul>
                                 </div>
@@ -1183,60 +1253,7 @@
     <script src="js/contact-us.js"></script>
     <script src="js/lang.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,  // default duration
-            easing: 'ease-in-out',
-            once: true,      // animate only once
-            mirror: false    // do not animate when scrolling back
-        });
-
-        window.addEventListener('load', () => {
-            AOS.refresh();  // ensures AOS recalculates positions
-        });
-
-
-        (function () {
-            emailjs.init({
-                publicKey: "35Z8XtGI0jqxLdatv",
-            });
-
-        })();
-        const backToTopBtn = document.getElementById("backToTopBtn");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.style.display = "flex";
-            } else {
-                backToTopBtn.style.display = "none";
-            }
-        });
-
-        backToTopBtn.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        });
-
-
-    </script>
-    <script>
-        document.querySelectorAll('.modal').forEach(modalEl => {
-            modalEl.addEventListener('shown.bs.modal', () => {
-                var carousels = modalEl.querySelectorAll('.carousel');
-                carousels.forEach(carouselEl => {
-                    bootstrap.Carousel.getOrCreateInstance(carouselEl, {
-                        interval: 3000,
-                        ride: 'carousel'
-                    });
-                });
-            });
-        });
-        document.querySelectorAll('.carousel video').forEach(video => {
-            video.addEventListener('click', e => e.stopPropagation());
-        });
-    </script>
+    <script src="js/lab.js"></script>
 </body>
 
 </html>

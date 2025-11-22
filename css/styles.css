@@ -4829,7 +4829,6 @@ fieldset:disabled .btn {
 }
 
 .card-title {
-  margin-bottom: var(--bs-card-title-spacer-y);
       color: #4e5883;
           padding-bottom: 17px;
 }
@@ -13491,7 +13490,7 @@ header.masthead .masthead-heading {
 }
 
 .portfolio-modal .modal-content {
-  padding-top: 6rem;
+  padding-top: 2rem;
   padding-bottom: 6rem;
   text-align: center;
 }

@@ -73,9 +73,48 @@ function changeLanguage(lang) {
       document.querySelector('#portSubtitleIndex').textContent = data.portSubtitleIndex;
       document.querySelector('#portContact').textContent = data.portContact;
 
+      document.querySelector('#saffarmaDesc').textContent = data.saffarmaDesc;
+      document.querySelector('#saffarmaNote').textContent = data.saffarmaNote;
+      document.querySelector('#saffarmaFeature').textContent = data.saffarmaFeature;
+      document.querySelector('#saffarmaFeature1').textContent = data.saffarmaFeature1;
+      document.querySelector('#saffarmaFeature2').textContent = data.saffarmaFeature2;
+      document.querySelector('#saffarmaFeature3').textContent = data.saffarmaFeature3;
+      document.querySelector('#saffarmaFeature4').textContent = data.saffarmaFeature4;
+      document.querySelector('#saffarmaTech').textContent = data.saffarmaTech;
+      document.querySelector('#saffarmaTech1').textContent = data.saffarmaTech1;
+      document.querySelector('#saffarmaTech2').textContent = data.saffarmaTech2;
+      document.querySelector('#saffarmaTech3').textContent = data.saffarmaTech3;
+      document.querySelector('#saffarmaTech4').textContent = data.saffarmaTech4;
+      document.querySelector('#saffarmaTech5').textContent = data.saffarmaTech5;
+      document.querySelector('#saffarmaTech6').textContent = data.saffarmaTech6;
 
+      document.querySelector('#travelDesc').textContent = data.travelDesc;
+      document.querySelector('#travelNote').textContent = data.travelNote;
+      document.querySelector('#travelFeature').textContent = data.travelFeature;
+      document.querySelector('#travelFeature1').textContent = data.travelFeature1;
+      document.querySelector('#travelFeature2').textContent = data.travelFeature2;
+      document.querySelector('#travelFeature3').textContent = data.travelFeature3;
+      document.querySelector('#travelFeature4').textContent = data.travelFeature4;
+      document.querySelector('#travelTech').textContent = data.travelTech;
+      document.querySelector('#travelTech1').textContent = data.travelTech1;
+      document.querySelector('#travelTech2').textContent = data.travelTech2;
+      document.querySelector('#travelTech3').textContent = data.travelTech3;
+      document.querySelector('#travelTech4').textContent = data.travelTech4;
+      document.querySelector('#travelTech5').textContent = data.travelTech5;
 
-
+      document.querySelector('#isoDesc').textContent = data.isoDesc;
+      document.querySelector('#isoNote').textContent = data.isoNote;
+      document.querySelector('#isoFeature').textContent = data.isoFeature;
+      document.querySelector('#isoFeature1').textContent = data.isoFeature1;
+      document.querySelector('#isoFeature2').textContent = data.isoFeature2;
+      document.querySelector('#isoFeature3').textContent = data.isoFeature3;
+      document.querySelector('#isoFeature4').textContent = data.isoFeature4;
+      document.querySelector('#isoFeature5').textContent = data.isoFeature5;
+      document.querySelector('#isoTech').textContent = data.isoTech;
+      document.querySelector('#isoTech1').textContent = data.isoTech1;
+      document.querySelector('#isoTech2').textContent = data.isoTech2;
+      document.querySelector('#isoTech3').textContent = data.isoTech3;
+      document.querySelector('#isoTech4').textContent = data.isoTech4;
 
 
     });
