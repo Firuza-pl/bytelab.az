@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ByteLab</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/tab-menu.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/ByteLab.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+
+                    <li class="nav-item"><a class="nav-link" href="#home" id="homeIndex">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" id="aboutIndex">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features" id="featureIndex">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" id="serviceIndex">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history" id="historyIndex">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" id="portfolioIndex">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" id="contactIndex">Contact</a></li>
+                    <select class="lang-option" onchange="changeLanguage(this.value)">
+                        <option value="en">Eng</option>
+                        <option value="az">Az</option>
+                    </select>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-format" data-aos="fade-up-right" data-aos-easing="ease-in-out"
+                    data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+                    <h1 id="titleIndex" class="masthead-subheading">Build The Future With Us</h1>
+                    <p id="subtitleIndex" class="masthead-heading">Start Small, Think Big, Code Byte by
+                        Byte </p>
+                    <div class="d-flex hero " style="text-align: justify;">
+                        <a class="btn-get-started" href="#contact" id="contactUsIndex">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img">
+                    <img src="assets/img/bg/bg-2.png" data-aos="zoom-in" data-aos-easing="ease-in-out"
+                        data-aos-delay="300" data-aos-duration="1000" data-aos-once="true" class="img-fluid floating"
+                        alt="">
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+    <!-- About-->
+    <section class="page-section about" id="about">
+        <div class="container">
+            <div class="text-center section-title" data-aos="fade-down" data-aos-easing="ease-in-out"
+                data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
+                <h2 class="section-heading text-uppercase" id="aboutUsIndex">About Us</h2>
+            </div>
+            <div class="row gy-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                data-aos-duration="800" data-aos-once="true">
+                <div class="col-lg-6 content aos-init aos-animate">
+                    <p id="aboutUsTextIndex">
+                        At ByteLab, our mission is to guide young minds into the world of coding through hands-on
+                        lessons, real projects, and interactive labs. We believe that the best way to learn programming
+                        is by creating, experimenting, and having fun along the way. Each course is carefully designed
+                        to build a strong foundation in backend development, databases, and modern technologies like
+                        .NET and C#. Whether students dream of becoming developers, engineers, or simply want to
+                        understand how technology works, ByteLab helps them take their first confident steps toward a
+                        future in tech.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <p id="aboutUsSyllabusIndex">
+                        You can watch our demo lessons and preview syllabus to see how we teach before booking a course.
+                    </p>
+                    <div class="pdf-list">
+                        <a href="javascript:void(0)" class="pdf-item openPdf" data-target="pdfModal1">
+                            <div class="pdf-text" id="aboutUsButtonIndex">Syllabus – Programming Fundamentals</div>
+                            <i class="bi bi-filetype-pdf pdf-icon"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-item openPdf" data-target="pdfModal2">
+                            <div class="pdf-text" id="aboutUsButtonIndex2">Syllabus – Database Management</div>
+                            <i class="bi bi-filetype-pdf pdf-icon"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="pdf-item openPdf" data-target="pdfModal3">
+                            <div class="pdf-text" id="aboutUsButtonIndex3">Syllabus – .NET Framework</div>
+                            <i class="bi bi-filetype-pdf pdf-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- PDF Viewer Modal -->
+            <div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pdfTitle">PDF Viewer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <iframe id="pdfFrame" src="" width="100%" height="700px" style="border: none;"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="300" data-aos-duration="800" data-aos-once="true"><a
+                            href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                            class="glightbox btn-watch-video d-flex align-items-center" target="_blank">
+
+                            <div class="post-img position-relative overflow-hidden">
+                                <img src="assets/img/blog/vidImg-1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content d-flex flex-column"><a
+                                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                class="glightbox btn-watch-video d-flex align-items-center">
+                                <h3 class="post-title" id="backendDevelopmentIndex">Backend Development </h3>
+
+                            </a>
+                            <div class="meta d-flex align-items-center"><a
+                                    href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                    class="glightbox btn-watch-video d-flex align-items-center" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-braces"></i> <span class="ps-2"><b>C#</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-fast-forward-btn"></i> <span class="ps-2" id="demoLessonsIndex">
+                                            Demo
+                                            Video</span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                </a>
+                                <div class="d-flex align-items-center"><a
+                                        href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                        class="glightbox btn-watch-video d-flex align-items-center">
+                                    </a><a href="https://wa.me/+994775542101" target="_blank"> <i
+                                            class="bi bi-telephone-inbound-fill"></i> <span class="ps-2"
+                                            id="bookLessonIndex">Book
+                                            Lesson</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="300" data-aos-duration="900" data-aos-once="true"><a
+                            href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                            class="glightbox btn-watch-video d-flex align-items-center" target="_blank">
+
+                            <div class="post-img position-relative overflow-hidden">
+                                <img src="assets/img/blog/vidImg-2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content d-flex flex-column"><a
+                                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                class="glightbox btn-watch-video d-flex align-items-center">
+                                <h3 class="post-title" id="backendDevelopmentIndex2">Backend Development </h3>
+
+                            </a>
+                            <div class="meta d-flex align-items-center"><a
+                                    href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                    class="glightbox btn-watch-video d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-braces"></i> <span class="ps-2"><b>Java</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-fast-forward-btn"></i> <span class="ps-2"
+                                            id="demoLessonsIndex2">
+                                            Demo
+                                            Video</span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                </a>
+                                <div class="d-flex align-items-center"><a
+                                        href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                        class="glightbox btn-watch-video d-flex align-items-center">
+                                    </a><a href="https://wa.me/+994775542101" target="_blank"> <i
+                                            class="bi bi-telephone-inbound-fill"></i> <span class="ps-2"
+                                            id="bookLessonIndex2">Book
+                                            Lesson</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-easing="ease-in-out"
+                        data-aos-delay="300" data-aos-duration="1100" data-aos-once="true"><a
+                            href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                            class="glightbox btn-watch-video d-flex align-items-center" target="_blank">
+
+                            <div class="post-img position-relative overflow-hidden">
+                                <img src="assets/img/blog/vidImg-3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="post-content d-flex flex-column"><a
+                                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                class="glightbox btn-watch-video d-flex align-items-center" target="_blank">
+                                <h3 class="post-title" id="databaseManagementIndex">Database Management </h3>
+
+                            </a>
+                            <div class="meta d-flex align-items-center"><a
+                                    href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                    class="glightbox btn-watch-video d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-braces"></i> <span class="ps-2"><b>SQL</b></span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-fast-forward-btn"></i> <span class="ps-2"
+                                            id="demoLessonsIndex3">
+                                            Demo
+                                            Video</span>
+                                    </div>
+                                    <span class="px-3 text-black-50">/</span>
+                                </a>
+                                <div class="d-flex align-items-center"><a
+                                        href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                                        class="glightbox btn-watch-video d-flex align-items-center">
+                                    </a><a href="https://wa.me/+994775542101" target="_blank"> <i
+                                            class="bi bi-telephone-inbound-fill"></i> <span class="ps-2"
+                                            id="bookLessonIndex3">Book
+                                            Lesson</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features-->
+    <section class="page-section about" id="features">
+        <div class="container">
+            <div class="text-center section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                data-aos-duration="800" data-aos-once="true">
+                <h2 class="section-heading text-uppercase" id="featuresTitleIndex">Our Features</h2>
+                <h3 class="section-subheading text-muted" id="featuresSubtitleIndex">Our approach combines comfort,
+                    creativity, and hands-on
+                    learning</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-easing="ease-in-out"
+                    data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-laptop icon"></i></div>
+                        <h4><a href="" class="stretched-link" id="featuresItem1Index">Comfortable Learning
+                                Environment</a></h4>
+                        <p id="featuresItem1TextIndex">Our programs are fully online, so you can learn without leaving
+                            home. We’re
+                            also preparing
+                            an on-site space that will open in the coming months.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-easing="ease-in-out"
+                    data-aos-delay="300" data-aos-duration="1200" data-aos-once="true">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-file-earmark-code-fill icon"></i></div>
+                        <h4><a href="" class="stretched-link" id="featuresItem2Index">Practice-Based Learning</a></h4>
+                        <p id="featuresItem2TextIndex">Learn by doing! Each topic includes real coding practice and fun
+                            mini
+                            projects to build your skills
+                            step by step.
+                        </p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-easing="ease-in-out"
+                    data-aos-delay="300" data-aos-duration="1500" data-aos-once="true">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-newspaper icon"></i></div>
+                        <h4><a href="" class="stretched-link" id="featuresItem3Index">Multilingual Learning</a></h4>
+                        <p id="featuresItem3TextIndex">You can join our lessons in English or Azerbaijani, making
+                            learning easier
+                            and more comfortable for everyone.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-easing="ease-in-out"
+                    data-aos-delay="300" data-aos-duration="1700" data-aos-once="true">
+                    <div class="service-item position-relative">
+                        <div class="icon"><i class="bi bi-camera-video-fill icon"></i></div>
+                        <h4><a href="" class="stretched-link" id="featuresItem4Index">Video Recorded After School</a>
+                        </h4>
+                        <p id="featuresItem4TextIndex">Students can review the material after school, catch up easily,
+                            and never
+                            miss a topic.</p>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="page-section work-process" id="services">
+        <div class="container">
+            <div class="text-center section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                data-aos-duration="1000" data-aos-once="true">
+                <h2 class="section-heading text-uppercase" id="servicesTitleIndex">Our Services</h2>
+                <h3 class="section-subheading text-muted" id="servicesSubtitleIndex">Explore the services that bring
+                    your digital ideas to life.
+                </h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                    data-aos-duration="1000" data-aos-once="true">
+                    <div class="steps-item">
+                        <div class="steps-image">
+                            <img src="assets/img/blog/les-3.jpg" alt="Step 1" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="steps-content">
+                            <div class="steps-number">01</div>
+                            <h3>C# &amp; Java </h3>
+                            <p id="servicesItem1Index">Backend Development Course</p>
+                            <div class="steps-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList1Index">Algorithms</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span>.NET framework </span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span>Spring Boot framework</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span>API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Steps Item -->
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                    data-aos-duration="1200" data-aos-once="true">
+                    <div class="steps-item">
+                        <div class="steps-image">
+                            <img src="assets/img/blog/les-2.jpg" alt="Step 1" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="steps-content">
+                            <div class="steps-number">02</div>
+                            <h3>MS SQL </h3>
+                            <p id="servicesItem2Index">Database Management</p>
+                            <div class="steps-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList2Index">Design and Structure</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList3Index">SQL queries </span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList4Index">Connecting databases with backend</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Steps Item -->
+                </div>
+                <div class="col-lg-4" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                    data-aos-duration="1500" data-aos-once="true">
+                    <div class="steps-item">
+                        <div class="steps-image">
+                            <img src="assets/img/blog/les-3.jpg" alt="Step 1" class="img-fluid" loading="lazy">
+                        </div>
+                        <div class="steps-content">
+                            <div class="steps-number">03</div>
+                            <h3 id="servicesItem3TitleIndex">Website development </h3>
+                            <p id="servicesItem3Index">We design and build modern, responsive websites</p>
+                            <div class="steps-features">
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList5Index">Responsive design</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList6Index">Coding </span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList7Index">Deploy website to server</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="bi bi-check-circle"></i>
+                                    <span id="servicesList8Index">Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Steps Item -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- History  -->
+    <section id="history" class="call-to-action">
+        <img src="assets/img/bg/bg-1.jpeg" alt="">
+        <div class="container">
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-xl-9 text-center text-xl-start">
+                    <h3 id="codinTitleIndex">Why Learn to Code?</h3>
+                    <p id="codingDescIndex">Coding is more than typing lines on a screen — it’s the language of the
+                        future. Every app, game, and website you use was built by someone who knew how to code. It’s the
+                        skill that turns ideas into reality. When you learn coding, you learn how to think differently.
+                        You don’t just follow instructions — you solve problems, create things from nothing, and make
+                        technology work for you. From designing your own website to building smart systems that help
+                        people, coding gives you the power to shape the world around you. The earlier you start, the
+                        stronger your digital creativity becomes — and the future belongs to creators.</p>
+                </div>
+                <div class="col-xl-3 cta-btn-container text-center">
+                    <a class="cta-btn align-middle" href="https://wa.me/+994775542101" target="_blank"
+                        id="codingButtonIndex">Book Lesson</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Portfolio Grid-->
+    <article class="page-section text-center" id="portfolio">
+        <div class="container">
+            <div class="text-center section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="300"
+                data-aos-duration="800" data-aos-once="true">
+                <h2 class="section-heading text-uppercase" id="portTitleIndex">Portfolio</h2>
+                <h3 class="section-subheading text-muted" id="portSubtitleIndex">Explore our projects.</h3>
+            </div>
+            <section class="page-section">
+                <!-- line1 -->
+                <div  class="portfolio-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-offset="100">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">Pharmacy</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/saffarma/cover.png" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 3-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">Travel</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/travel/cover.jpg" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 3-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">LORDS</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/iso/cover.jpg" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- line2 -->
+                <div class="portfolio-wrapper" data-aos="fade-up" data-aos-delay="100" data-aos-offset="100">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">Project 3 </p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 2-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">Project4</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 mb-4 px-3">
+                            <!-- Portfolio item 3-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fas fa-plus fa-2x"></i>
+                                            <p class="hover-text" data-aos="fade-up" data-aos-delay="100"
+                                                data-aos-offset="100">Project5</p>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="assets/img/portfolio/loading/loading.jpg" alt="..." />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline-warning animate__animated"
+                        onmouseover="this.classList.add('animate__pulse')"
+                        onmouseout="this.classList.remove('animate__pulse')">
+                        <a href="#contact" class="forMore" id="portContact">For more information, get in touch with
+                            us!</a>
+                    </button>
+
+                </div>
+            </section>
+        </div>
+    </article>
+    <!-- Contact-->
+    <section class="page-section contact" id="contact">
+        <div class="container">
+            <div class="text-center section-title" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="section-heading text-uppercase" id="contatctTitleIndex">Contact</h2>
+                <h3 class="section-subheading text-muted" id="contatctSubTitleIndex">Reach out and take the next step in
+                    your learning journe</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <div class="info-wrap">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <a href="https://maps.app.goo.gl/dteyrvHdNxxdrH8cA" target="_blank"> <i
+                                    class="bi bi-geo-alt flex-shrink-0"></i></a>
+                            <div>
+                                <h3 id="contactAddressTitleIndex">Address</h3>
+                                <p id="contactAddressSubTitleIndex">Azerbaijan, Baku</p>
+                            </div>
+                        </div><!-- End Info Item -->
+                        <hr>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <a href="tel:+994775542101" target="_blank"><i
+                                    class="bi bi-telephone flex-shrink-0"></i></a>
+                            <div>
+                                <h3 id="contactCallTitleIndex">Call Us</h3>
+                                <p>+994 77 554 21 01 | +994 51 516 12 18 </p>
+                            </div>
+                        </div><!-- End Info Item -->
+                        <hr>
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <a href="https://wa.me/+994775542101" target="_blank">
+                                <i class="bi bi-whatsapp flex-shrink-0"></i>
+                            </a>
+                            <div>
+                                <h3 id="contactWpTitleIndex">Whatsapp</h3>
+                                <p id="contactWpSubTitleIndex">Have a question? Send us a message and we’ll reply within
+                                    5
+                                    minutes!
+                                </p>
+                            </div>
+                        </div><!-- End Info Item -->
+                        <hr>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d49.8920!3d40.3777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306405df3afc03%3A0x0!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2saz!4v1676961268712!5m2!1sen!2saz"
+                            frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="info-wrap">
+
+                        <form id="contact-form" data-aos="fade-up" data-aos-delay="600">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <label for="name-field" class="pb-2" id="contatFormNameIndex">Your Full Name</label>
+                                    <input type="text" name="name" id="name-field" class="form-control" required="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email-field" class="pb-2" id="contatFormEmailIndex">Your Email</label>
+                                    <input type="email" class="form-control" name="email" id="email-field" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="subject-field" class="pb-2" id="contatFormSubjectIndex">Subject</label>
+                                    <input type="text" class="form-control" name="subject" id="subject-field"
+                                        required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label for="message-field" class="pb-2" id="contatFormMessageIndex">Message</label>
+                                    <textarea class="form-control" name="message" rows="10" id="message-field"
+                                        required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading" style="display:none;">Loading</div>
+                                    <div class="error-message" style="display:none; color:red;"></div>
+                                    <div class="sent-message" style="display:none; color:green;">Your message has been
+                                        sent.
+                                        Thank you!
+                                    </div>
+                                    <button type="submit" class="btn-contacts" id="contatFormButtonIndex">Send
+                                        Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div><!-- End Contact Form -->
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Footer-->
+    <footer id="footer" class="footer">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-6 col-md-12">
+                    <h4 id="footerTitleIndex">Follow Us</h4>
+                    <p id="footerSubtitleTitleIndex">Let’s stay connected—see what’s new!</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="social-links d-flex" style="float: inline-end;">
+                        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container copyright text-center mt-4">
+            <!-- Firuza Poladzade | ByteLab -->
+            by ByteLab &copy; Copyright 2025-2026. All Rights Reserved.
+        </div>
+        </div>
+    </footer>
+    <button id="backToTopBtn" class="back-to-top"> <i class="bi bi-caret-up-fill"></i></button>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 4 modal popup Lords-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl"> <!-- Use modal-xl for more space -->
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal">
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container" id="portfolio-card">
+                    <div class="row">
+                        <!-- Blog entries-->
+                        <div class="col-lg-8">
+                            <!-- Featured blog post-->
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="card-title">LORDS</h2>
+                                    <hr>
+                                    <p class="card-text">This project is a two-part application developed to support and
+                                        generate reports based on ISO standards. It enables users to enter, manage, and
+                                        evaluate data efficiently while maintaining full compliance with ISO
+                                        requirements. The system consists of two interconnected applications that
+                                        communicate seamlessly through HttpContext and secure API integration, ensuring
+                                        accurate and synchronized operations between modules. Advantages: - Digital
+                                        solution for compiling day-to-day tasks and actions - Real-time monitoring of
+                                        task implementation status - Ability to attach evidence documents - Automatic
+                                        email notifications to responsible persons - Implementation reports for assigned
+                                        actions - Each task is automatically numbered and registered</p>
+                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                        Please note that the full code cannot be shared due to security reasons</span>
+                                </div>
+                            </div>
+                              <div id="carouselModal1" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- Image Slide -->
+                                    
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/iso/content4.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/iso/content4.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <a href="assets/img/portfolio/iso/content5.png" target="_blank">
+                                            <img class="d-block w-100" src="assets/img/portfolio/iso/content5.png"
+                                                alt="Third slide">
+                                        </a>
+                                    </div>
+                                     <div class="carousel-item active">
+                                        <a href="assets/img/portfolio/iso/content8.jpg" target="_blank">
+                                            <img class="d-block w-100" src="assets/img/portfolio/iso/content8.jpg"
+                                                alt="Third slide">
+                                        </a>
+                                    </div>
+                                     <div class="carousel-item active">
+                                        <a href="assets/img/portfolio/iso/content9.jpg" target="_blank">
+                                            <img class="d-block w-100" src="assets/img/portfolio/iso/content9.jpg"
+                                                alt="Third slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/iso/content1.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/iso/content1.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/iso/content2.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/iso/content2.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/iso/content3.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/iso/content3.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <!-- Video Slide -->
+                                    <div class="carousel-item ">
+                                        <a href="assets/img/portfolio/iso/content6.mp4" target="_blank"><video
+                                                class="img-fluid modal-screenshot" controls="">
+                                                <source src="assets/img/portfolio/iso/content6.mp4" type="video/mp4">
+                                                Your
+                                                browser does not support the video tag.
+                                            </video></a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModal1" role="button"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModal1" role="button"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Side widgets-->
+                        <div class="col-lg-4">
+                            <!-- Side widget-->
+                            <div class="card mb-4">
+                                <div class="card-header">Features</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3 tex">
+                                        <li>
+                                            <i class="bi bi-journal-text me-2 text-primary"></i>Data input,
+                                            tracking, and validation based on ISO requirements
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-arrow-left-right me-2 text-success"></i>Two-part
+                                            application with secure inter-communication
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-lock-fill me-2 text-danger"></i>API-level
+                                            security and controlled access
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-clipboard-data me-2 text-warning"></i>Report
+                                            generation and evaluation tools
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-diagram-3-fill me-2 text-info"></i>Clear
+                                            workflow and compliance monitoring modules
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header">Technologies</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3">
+                                        <li>
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-hdd-network me-2 text-success"></i>RESTful APIs
+                                            with secure token-based communication
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-boxes me-2 text-primary"></i>Entity Framework
+                                            Core (Code First)
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-database-check me-2 text-info"></i>SQL Server
+                                            for structured data handling
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-shield-lock me-2 text-light"></i>Role-based
+                                            authorization and secure data access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup Travel-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal">
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container" id="portfolio-card">
+                    <div class="row">
+                        <!-- Blog entries-->
+                        <div class="col-lg-8">
+                            <!-- Featured blog post-->
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="card-title">Travel</h2>
+                                    <hr>
+                                    <p class="card-text">This project is a robust backend system developed to power a
+                                        travel platform enabling efficient management of destinations, bookings, and
+                                        user data. Designed with clean architecture principles, it provides secure and
+                                        scalable API services to support multiple client applications. The system
+                                        focuses on reliable data processing, authentication, and business logic
+                                        implementation, ensuring seamless integration with front-end clients or
+                                        third-party services.</p>
+                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                        Please note that the full code cannot be shared due to security reasons</span>
+                                </div>
+                            </div>
+                               <div id="carouselModal2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- Image Slide -->
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/travel/content3.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/travel/content3.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/travel/content4.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/travel/content4.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/travel/content2.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/travel/content2.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/travel/content5.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/travel/content5.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <a href="assets/img/portfolio/travel/content1.png" target="_blank">
+                                            <img class="d-block w-100" src="assets/img/portfolio/travel/content1.png"
+                                                alt="Third slide">
+                                        </a>
+                                    </div>
+                                    <!-- Video Slide -->
+                                    <div class="carousel-item ">
+                                        <a href="assets/img/portfolio/travel/content7.mp4" target="_blank"><video
+                                                class="img-fluid modal-screenshot" controls="">
+                                                <source src="assets/img/portfolio/travel/content7.mp4" type="video/mp4">
+                                                Your
+                                                browser does not support the video tag.
+                                            </video></a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModal2" role="button"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModal2" role="button"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Side widgets-->
+                        <div class="col-lg-4">
+                            <!-- Side widget-->
+                            <div class="card mb-4">
+                                <div class="card-header">Features</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3">
+                                        <li>
+                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>Search and filter
+                                            destinations with detailed travel information
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-person-circle me-2 text-danger"></i>Secure user
+                                            authentication and profile management
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-shield-lock me-2 text-warning"></i>JWT-based token
+                                            authentication ensuring secure API access
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>Responsive design with a
+                                            clean and intuitive user interface
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header">Technologies</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3">
+                                        <li>
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core for backend
+                                            development
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-database me-2 text-primary"></i>Entity Framework Core (Code
+                                            First)
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-diagram-3 me-2 text-success"></i>SQL Server for reliable and
+                                            structured data storage
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>JWT (JSON Web
+                                            Tokens) for stateless and secure authentication
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-box me-2 text-light"></i>Clean architecture and design
+                                            patterns for maintainable code
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup Saffarma-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <!-- Use modal-xl for more space -->
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal">
+                    <img src="assets/img/close-icon.svg" alt="Close modal" />
+                </div>
+                <div class="container" id="portfolio-card">
+                    <div class="row">
+                        <!-- Blog entries-->
+                        <div class="col-lg-8">
+                            <!-- Featured blog post-->
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h2 class="card-title">Saffarma</h2>
+                                    <hr>
+                                    <p class="card-text">This project is an online drugstore stock management
+                                        system, a modular backend solution built to power a scalable and
+                                        maintainable enterprise-level application. Developed using layered
+                                        Domain-Driven Design (DDD) and clean architecture principles, it
+                                        efficiently separates concerns across data access, business logic,
+                                        shared models, and localization resources. The system provides robust
+                                        and secure RESTful APIs for managing inventory, users, and
+                                        administrative operations. With integrated localization support and
+                                        Dockerized deployment, it ensures flexibility, maintainability, and
+                                        consistency across different environments—making it well-suited for
+                                        modern DevOps workflows.</p>
+                                    <span style="color: red;">Click on the image or videos to see them fullscreen.
+                                        Please note that the full code cannot be shared due to security reasons</span>
+                                </div>
+                            </div>
+                               <div id="carouselModal3" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- Image Slide -->
+                                    <div class="carousel-item active">
+                                        <a href="assets/img/portfolio/saffarma/content8.png" target="_blank">
+                                            <img class="d-block w-100" src="assets/img/portfolio/saffarma/content8.png"
+                                                alt="Third slide">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content7.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content7.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content2.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content2.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content2.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content3.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content1.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content1.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content9.png" target="_blank"><img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content9.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content5.png" target="_blank"> <img
+                                                class="d-block w-100" src="assets/img/portfolio/saffarma/content5.png"
+                                                alt="Third slide"></a>
+                                    </div>
+                                    <!-- Video Slide -->
+                                    <div class="carousel-item ">
+                                        <a href="assets/img/portfolio/saffarma/content10.mp4" target="_blank"><video
+                                                class="img-fluid modal-screenshot" controls="">
+                                                <source src="assets/img/portfolio/saffarma/content10.mp4"
+                                                    type="video/mp4">
+                                                Your
+                                                browser does not support the video tag.
+                                            </video></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content11.mp4"><video
+                                                class="img-fluid modal-screenshot" controls="">
+                                                <source src="assets/img/portfolio/saffarma/content11.mp4"
+                                                    type="video/mp4">
+                                                Your
+                                                browser does not support the video tag.
+                                            </video></a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="assets/img/portfolio/saffarma/content12.mp4"> <video
+                                                class="img-fluid modal-screenshot" controls="">
+                                                <source src="assets/img/portfolio/saffarma/content12.mp4"
+                                                    type="video/mp4">
+                                                Your
+                                                browser does not support the video tag.
+                                            </video></a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselModal3" role="button"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselModal3" role="button"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Side widgets-->
+                        <div class="col-lg-4">
+                            <!-- Side widget-->
+                            <div class="card mb-4">
+                                <div class="card-header">Features</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3">
+                                        <li>
+                                            <i class="bi bi-geo-alt-fill me-2 text-primary"></i>Search and
+                                            filter destinations with detailed travel information
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-person-circle me-2 text-danger"></i>Secure user
+                                            authentication and profile management
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-shield-lock me-2 text-warning"></i>JWT-based
+                                            token authentication ensuring secure API access
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-phone-vibrate me-2 text-info"></i>Responsive
+                                            design with a clean and intuitive user interface
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <div class="card-header">Technologies</div>
+                                <div class="card-body shadow-body">
+                                    <ul class="list-unstyled ps-3">
+                                        <li>
+                                            <i class="bi bi-microsoft me-2 text-secondary"></i>ASP.NET Core
+                                            for building secure, scalable APIs
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-database me-2 text-primary"></i>Entity Framework
+                                            Core with code-first migrations
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-diagram-3 me-2 text-success"></i>Custom logic
+                                            layer with DI and interfaces for testability
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-gear-wide-connected me-2 text-info"></i>Localization
+                                            with .resx files and culture-based routing
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-box me-2 text-light"></i>Docker &amp; Docker
+                                            Compose for containerized development
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-cloud-arrow-up-fill"></i> Amazon S3 for scalable
+                                            object storage (file/image uploads)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/pdf-modal.js"></script>
+    <script src="js/contact-us.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,  // default duration
+            easing: 'ease-in-out',
+            once: true,      // animate only once
+            mirror: false    // do not animate when scrolling back
+        });
+
+        window.addEventListener('load', () => {
+            AOS.refresh();  // ensures AOS recalculates positions
+        });
+
+
+        (function () {
+            emailjs.init({
+                publicKey: "35Z8XtGI0jqxLdatv",
+            });
+
+        })();
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = "flex";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        });
+
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.modal').forEach(modalEl => {
+            modalEl.addEventListener('shown.bs.modal', () => {
+                var carousels = modalEl.querySelectorAll('.carousel');
+                carousels.forEach(carouselEl => {
+                    bootstrap.Carousel.getOrCreateInstance(carouselEl, {
+                        interval: 3000,
+                        ride: 'carousel'
+                    });
+                });
+            });
+        });
+        document.querySelectorAll('.carousel video').forEach(video => {
+            video.addEventListener('click', e => e.stopPropagation());
+        });
+    </script>
+</body>
+
+</html>

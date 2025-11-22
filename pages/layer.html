@@ -1,0 +1,768 @@
+<!portfolioTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ByteLab</title>
+        <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="../css/tab-menu.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+        body {
+            font-family: sans-serif !important;
+            font-size: 18px !important;
+        }
+    </style>
+
+    <body id="page-top">
+        <!-- Loader -->
+        <!-- <div id="loader"
+        style="display: flex; align-items: center; justify-content: center; height: 100vh; background-color: white; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;">
+        <img src="../assets/img/logos/loader.gif" alt="Loading..." width="100" height="100">
+    </div> -->
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="../assets/img/ByteLab.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+
+                        <li class="nav-item"><a class="nav-link" href="#home" id="homeIndex">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" id="aboutIndex">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features" id="featureIndex">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" id="serviceIndex">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#history" id="historyIndex">History</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio" id="portfolioIndex">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" id="contactIndex">Contact</a></li>
+                        <select class="lang-option" onchange="changeLanguage(this.value)">
+                            <option value="en">Eng</option>
+                            <option value="az">Az</option>
+                        </select>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- header -->
+        <header class="py-5 bg-light border-bottom mb-4">
+            <div class="container">
+            </div>
+            </div>
+        </header>
+        <!-- post -->
+        <div class="container">
+            <div class="row">
+                <!-- Blog entries-->
+                <div class="col-lg-9">
+                    <!-- Nlayer -->
+                    <!-- Featured blog title-->
+                    <div class="card mb-4">
+                        <a href="#!"><img class="card-img-top" src="../assets/img/blog/cover/layer.png" alt="..."></a>
+                        <div class="card-body">
+                            <div class="small text-muted">Posted by Firuza Polad on june 10, 2025</div>
+                            <h2 class="card-title">N-Layer Architecture </h2>
+                            <p class="card-text">N-Layer Architecture, also known as Multilayer Architecture, separates
+                                an
+                                application into distinct logical layers, each with its own responsibility. Each layer
+                                performs a single function and communicates only with the layer directly above or below
+                                it.
+
+                                There are two main variations:<strong> Tightly Coupled N-Layer</strong>—where layers
+                                call
+                                each other directly
+                                without abstractions, and the business logic depends directly on EF/DAL; The request
+                                starts
+                                at the UI, passes through the Business Layer, down to the Data Access Layer, and returns
+                                along the same path. The Business Layer can directly reference the DAL. and
+                                <strong>Loosely
+                                    Coupled
+                                    N-Layer</strong> —where the Service layer separates coordination from domain logic
+                                using
+                                interfaces, making the system more testable and
+                                maintainable. In this model, the UI layer communicates with the Service Layer instead of
+                                BL which allow DI,
+                                in return Service layer depend on Interface defined in Domain layer, and Infrastructure
+                                layer provides
+                                the concrete implementation. Service layer does not have a direct dependency to
+                                implementation of interface.
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- folder and diagram-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post flow1-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/diagram-tight.png" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/diagram-tight.png"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Typical Flow for Tightly Coupled N-Layer</h2>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Blog post folder1-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/folder-tight.png" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/folder-tight.png"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Tight Coupled Folder Structure</h2>
+                                    <p class="card-text">
+                                        <strong>Presentation Layer (UI)</strong>: Displays data to users, handles user
+                                        inputs, and forwards
+                                        them for processing (e.g., Controllers, Views, Razor Pages).
+                                        <strong>Business Layer (Domain)</strong>: Core business logic and rules;
+                                        includes
+                                        Entities, Value
+                                        Objects, Domain Services/Events (e.g., Book, PriceChangedEvent).
+                                        <strong>Data Access Layer (DAL)</strong>: Handles data persistence and CRUD
+                                        operations, including
+                                        Repositories and Migrations (Repository + DB).
+                                        <br>
+                                        <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post flow2-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/diagram-loose.jpg" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/diagram-loose.jpg"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Typical Flow for Loosely Coupled N-Layer</h2>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Blog post folder2-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/folder-loosely.png" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/folder-loosely.png"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Loosely Coupled Folder Structure</h2>
+                                    <p class="card-text">
+                                        <strong>Presentation Layer (UI)</strong>: Handles UI concerns (e.g.,
+                                        Controllers,
+                                        Views, Razor Pages) <br>
+                                        <strong>Application Layer</strong>: Acts as a bridge between UI and Domain,
+                                        containing use-case coordination logic (e.g., BookAppService) <br>
+                                        <strong>Business Layer (domain)</strong>: Contains the core business rules,
+                                        entities, and domain logic. <br>
+                                        <strong>Data Access Layer (DAL)</strong>: Manages data persistence and database
+                                        interactions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- code example -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Code Example for Tightly Coupled</h3> <br>
+                            <p>
+                                <b>Controller</b>: Handles the HTTP request and forwards it to the application service.
+                                <br>
+                            <pre><code>
+public class BooksController : Controller
+ {
+ private readonly BookService _service;
+
+ public BooksController()
+ {
+  _service = new BookService(); // tightly coupled happens here
+    }
+
+    // FIRUZA POLAD
+    public IActionResult GetAll()
+   {
+     var books = _service.GetAll();
+   return Ok(books);
+      }
+    }
+                            </code></pre>
+                            <b>Service</b>: Contains domain logic for creating books. <br>
+                            <pre><code>
+public class BookService
+{
+    private readonly BookRepository _repository = new BookRepository(); // tightly coupled happens here
+
+    // FIRUZA POLAD
+    public List&lt;Book&gt; GetAll() =&gt; _repository.GetAll();
+}
+</code></pre>
+                            <b>Repository</b>: Performs CRUD operations using Entity Framework. Database stores book
+                            data.
+                            <pre><code>
+public class BookRepository
+{
+    // FIRUZA POLAD
+    public List&lt;Book&gt; GetAll() =&gt; new() { new Book { Title = "Book A" } };
+}
+
+public class Book 
+{
+    public string Title { get; set; }
+}
+</code></pre>
+
+                            </p>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- //2nd    -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Code Example for Loosely Coupled</h3> <br>
+                            <p>
+                                <b>Controller</b>: Handles the HTTP request and forwards it to the application service
+                            <pre>
+                                    <code>
+public class BooksController: Controller
+{
+private readonly BookService _service;
+//FIRUZA POLAD
+public BooksController (BookService service) //Service injected through the constructor, simple example of DI
+{
+_service = service;
+}
+public IActionResult GetAll() =&gt; Ok(_service.GetAll());
+}
+                                    </code>
+                                </pre>
+                            <b>Service</b>: Acts as a bridge between the UI and domain logic, coordinates tasks.
+                            <pre><code>
+public class BookService
+{
+private readonly IBookRepository _repository;
+//FIRUZA POLAD
+public BookService(IBookRepository repository) //loosely coupled
+}
+{
+_repository
+=
+repository;
+}
+public List&lt;Book&gt; GetAll() =&gt; _repository.GetAll();
+                                </code></pre>
+                            <b>Interface</b>: UI layer communicate with Application layer help of Interface. <br>
+                            <pre><code>
+public interface IBookRepository //interface that help UI layer to communicate with Application layer
+- {
+List&lt;Book&gt; GetAll();
+}
+//FIRUZA POLAD
+public class Book { public string Title { get; set; } } //Entity
+                                </code></pre>
+                            <b>Reposiory</b>: Performs CRUD operations using Entity Framework. Database stores book
+                            data.
+                            <pre><code>
+public class MagicalBookRepository: IBookRepository //we can define as many repository implementations of IBookRepository
+{
+}
+public List&lt;Book&gt; GetAll() =&gt; new() { new Book { Title = "Book A" } }; //FIRUZA POLAD
+                                </code></pre>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <!-- Onion -->
+                    <!-- Featured blog title-->
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Clean Architecture</h2>
+                            <p class="card-text">This architecture aims to create system to ensure that different part
+                                of
+                                codebase are independent of each other, making it easier to change and extend without
+                                breaking thing. In here each layer has its own role, and wont affect the others. It has
+                                Core
+                                Business logic and Outer layer, and emphasizes Inward dependencies - Core logic does not
+                                depend on Outer layer (like Db), but Outer layer depend on the core.</p>
+                            <ul>
+                                <li>
+                                    <p><strong>Core Business Logic:</strong> It means what the application does. It
+                                        should
+                                        not depend on anything external like APIs or frameworks.</p>
+                                </li>
+                                <li>
+                                    <p><strong> Outer layer:</strong> Like DB, UI, external services. This depend on
+                                        core
+                                        logic, but core logic does not depend on them.</p>
+                                </li>
+
+                            </ul>
+                            <h2 class="card-title">Onion Architecture</h2>
+                            <p class="card-text">This architecture aims to keep the core business logic isolated from
+                                external layers such as DB, UI, Frameworks. Both, Clean architecture and Onion
+                                architecture
+                                share dependencies point inward to Core, meaning both contain domain entities; Core is
+                                independent of UI, DB; Outer layer depend on Core, but not vica versa.</p>
+                        </div>
+                    </div>
+                    <!-- folder and diagram-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Blog post flow1-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/diagram-onion.jpg" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/diagram-onion.jpg"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Typical Flow for Onion Architecture</h2>
+                                </div>
+                            </div>
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/folder-onion.png" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/folder-onion.png"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Onion Folder Structure</h2>
+                                    <p class="card-text">
+                                        <strong>Presentation Layer (UI)</strong>: Handles user interaction and
+                                        input/output
+                                        operation <br>
+                                        <strong>Application Layer</strong>: Handle data flow between the Domain and
+                                        Infrastructure <br>
+                                        <strong>Domain Layer (core)</strong>: Contains core business logic, domain
+                                        Entites,
+                                        value object, domain services. <br>
+                                        <strong>Infrastructure layer</strong>: Provide actual implementation of
+                                        interface
+                                        defined in domain like Repository,Logging,Catching.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Blog post folder2-->
+                            <div class="card mb-4">
+                                <a href="../assets/img/blog/Layer/diagram-clean.jpg" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/diagram-clean.jpg"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Typical Flow for Clean Architecture</h2>
+                                </div>
+                            </div>
+                            <div class="card mb-4" id="scroll-card">
+                                <a href="../assets/img/blog/Layer/folder-clean.jpg" target="_blank"><img
+                                        class="card-img-top" src="../assets/img/blog/Layer/folder-clean.jpg"
+                                        alt="..."></a>
+                                <div class="card-body">
+                                    <h2 class="card-title h4">Clean Folder Structure</h2>
+                                    <p class="card-text">
+                                        <strong>Interface adapters (UI):</strong>: Translate data between Core business
+                                        logic (entites, cases) and external system (Db, UI). Converst data format, so
+                                        Application logic can work with data without care about format, Controller/View.
+                                        <br>
+                                        <strong>Application logic (Use cases)</strong>: It coordinate interaction
+                                        between
+                                        entities and outside world. Use Cases, Commands, Queries, AppServices. <br>
+                                        <strong>Entites (core)</strong>: The heart of the application, containing
+                                        business
+                                        rules, domain entities, value objects. And independent of anything like DB, UI
+                                        code.. <br>
+                                        <strong>Infrastructure layer</strong>: Contains the actual implementation of
+                                        details. This layer depend on Interface defined in the Core BS logic. Deals with
+                                        the
+                                        things that often change, like DB, API, file system etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- code example -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Code Example for Onion architecture</h3> <br>
+                            <p>
+                                <b>Controller</b>: UI entry point — handles HTTP requests and forwards to Application
+                            <pre>
+ <code>public class BooksController: Controller
+{
+}
+private readonly BookAppService _appService;
+public BooksController (BookAppService appService) => _appService =
+-bodied constructor
+appService; //expression
+public IActionResult GetAll() => Ok(_appService.GetAll()); //FIRUZA POLAD
+                                </code>
+                               </pre>
+                            <br>
+                            <b>Service</b>: It orchestrates the flow between UI, Domain logic, and Infrastructure.
+                            <pre>
+<code>public class BookAppService
+{
+ //FIRUZA POLAD
+ private readonly IBookRepository _repository;
+ public BookAppService(IBookRepository repository) =&gt; _repository public List&lt;Book&gt;
+GetAll() =&gt; _repository.GetAll();
+}
+                                </code>
+                               </pre>
+                            <b>Interface</b>: Defines contract for data access <br>
+                            <pre>
+<code>public interface IBookRepository { List&lt;Book&gt; GetAll(); } //interface //FIRUZA POLAD
+ public class Book { public string Title { get; set; } } //Entity
+                                </code>
+                               </pre>
+                            <b>Reposiory</b>: Implements deals with actual data persistence such as DB, API
+                            <pre>
+ <code>public class EfBookRepository: IBookRepository
+{
+//FIRUZA POLAD
+}
+public List<Book> GetAll() => new() { new Book { Title = "Book A" } };
+                                </code>
+                               </pre>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Clean -->
+                    <!-- code example -->
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>Code Example for Clean architecture</h3> <br>
+                            <p>
+                                <b>Controller</b>: Uses AppService. So, Controller only depends on the AppService.
+                                Follows
+                                dependency inversion.
+<pre>
+<code>public class BooksController: Controller
+{
+private readonly IMediator _mediator;
+//we use mediatr for seperate write/read operations
+}
+public BooksController (IMediator mediator) => _mediator = mediator;
+public async Task<IActionResult> GetAll() => Ok(await _mediator.Send(new GetAllBooksQuery()));
+    </code>
+</pre>
+                                <b>Service</b>: Use MediatR for separation. Ensure commands/queries have required field
+<pre>
+<code>
+public class GetAllBooksQuery : IRequest<List<Book>> { } //QueryCommand
+public class GetAllBooksQueryHandler: IRequestHandler<GetAllBooksQuery, List<Book>>
+{
+//QueryCommandHadler
+private readonly IBookRepository _repository;
+//interface
+}
+public GetAllBooksQueryHandler(IBookRepository repository) => _repository //FIRUZA POLAD
+=
+repository;
+public Task<List<Book>> Handle(GetAllBooksQuery request, CancellationToken ct) => Task
+.FromResult(_repository.GetAll());
+    </code>
+</pre>
+                                <b>Entites</b>: Books entity and Reposiory interface is defined in Domain Layer. <br>
+<pre>
+<code>public interface IBookRepository { List<Book> GetAll(); } //interface //FIRUZA POLAD
+public class Book { public string Title { get; set; } } //Entity
+    </code>
+</pre>
+                                <b>Infrastructure</b>: Repository implements domain interface which is defined Core
+                                logic.
+<pre>
+<code>public interface IBookRepository { List<Book> GetAll(); } //interface //FIRUZA POLAD
+public class Book { public string Title { get; set; } } //Entity
+    </code>
+</pre>
+                            </p>
+                        </div>
+                    </div>
+                   
+                    <!-- Compare -->
+                    <br>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Nlayer architecture vs Onion architecture:</h2>
+                            <p class="card-text"> Both use layers like UI,Service,Domain,Data, but they are not the
+                                same.
+                                <br>
+                                a. In Nlayer architecture : flow is top-down, UI depend on BL in return BL depend on
+                                DAL.
+                                Controller (UI)->Service(BS)->Repository(DAL)-> Infrastructure(DB). Tight coupling makes
+                                swapping hard. <br>
+                                b. In Onion architecture : flow is inward, Outer layer depend on Inner layer(domain),
+                                domain
+                                must not depend on anything. Domain has no idea what EF is, Repository is just interface
+                                in
+                                Domain, and Infrastructure implement interface and injects it upward.
+                                Controller(UI)->AppService (application) -> Domain (IRepository)-> Infrastructure
+                                (implementation) Easy to swap Infrastructure without touching domain.
+                            </p>
+
+                            <h2 class="card-title">Clean architecture vs Onion architecture:</h2>
+                            <p class="card-text">a. In Clean architecture has a special Use Case Layer to define
+                                Command/Queries/Handlers. Separation via CQRS, Mediatr is supported. Emphasize use-case
+                                driven architecture. <br>
+                                b. In Onion architecture the application logic is often part of services. Seperation is
+                                Optional, often declared in services. <br>
+                                <strong>NOTE:</strong> Use Cases- describe specific user goals or tasks
+                                that the system supports. Example: imagine online store, here some Use Cases are: create
+                                order, process payment, update account details.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-3" id="blog-card">
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Other Blogs</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="../pages/layer.html">Layer Architecture</a></li>
+                                        <li><a href="../pages/pattern.html">Repository Pattern</a></li>
+                                        <li><a href="../pages/mapper.html">AutoMapper</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="../pages/domain.html">Domain Driven Design</a></li>
+                                        <li><a href="../pages/mediatr.html">CQRS / MediatR</a></li>
+                                        <li><a href="../pages/service.html">Service Architecture</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="../pages/solid.html">SOLID & DI</a></li>
+                                        <li><a href="../pages/factory.html">Factory Pattern</a></li>
+                                        <li><a href="../pages/token.html"> API</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="../pages/minimal.html">MinimalAPI</a></li>
+                                        <li><a href="../pages/testing.html">Unit Testing</a></li>
+                                        <li><a href="../pagesker.html">CI/CD</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">Information</div>
+                        <div class="card-body"> All diagrams, Folder structure, Code example in this blog were created
+                            by me
+                            using <em>Lucid</em> , <em>Canva</em> and <em>IDE</em>
+                            If you'd like to contribute, request more diagrams or text, or suggest improvements, feel
+                            free
+                            to <a href="#contact">contact me</a>
+                            <hr>
+                            &copy; 2025 Firuza Polad. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end post -->
+        <!-- Contact-->
+        <section class="page-section contact" id="contact">
+            <div class="container">
+                <div class="text-center section-title" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="section-heading text-uppercase" id="contatctTitleIndex">Contact</h2>
+                    <h3 class="section-subheading text-muted" id="contatctSubTitleIndex">Reach out and take the next
+                        step in
+                        your learning journe</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5">
+                        <div class="info-wrap">
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                                <a href="https://maps.app.goo.gl/dteyrvHdNxxdrH8cA" target="_blank"> <i
+                                        class="bi bi-geo-alt flex-shrink-0"></i></a>
+                                <div>
+                                    <h3 id="contactAddressTitleIndex">Address</h3>
+                                    <p id="contactAddressSubTitleIndex">Azerbaijan, Baku</p>
+                                </div>
+                            </div><!-- End Info Item -->
+                            <hr>
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                                <a href="tel:+994775542101" target="_blank"><i
+                                        class="bi bi-telephone flex-shrink-0"></i></a>
+                                <div>
+                                    <h3 id="contactCallTitleIndex">Call Us</h3>
+                                    <p>+994 77 554 21 01 | +994 51 516 12 18 </p>
+                                </div>
+                            </div><!-- End Info Item -->
+                            <hr>
+                            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                                <a href="https://wa.me/+994775542101" target="_blank">
+                                    <i class="bi bi-whatsapp flex-shrink-0"></i>
+                                </a>
+                                <div>
+                                    <h3 id="contactWpTitleIndex">Whatsapp</h3>
+                                    <p id="contactWpSubTitleIndex">Have a question? Send us a message and we’ll reply
+                                        within
+                                        5
+                                        minutes!
+                                    </p>
+                                </div>
+                            </div><!-- End Info Item -->
+                            <hr>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d49.8920!3d40.3777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306405df3afc03%3A0x0!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2saz!4v1676961268712!5m2!1sen!2saz"
+                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="info-wrap">
+
+                            <form id="contact-form" data-aos="fade-up" data-aos-delay="600">
+                                <div class="row gy-4">
+                                    <div class="col-md-6">
+                                        <label for="name-field" class="pb-2" id="contatFormNameIndex">Your Full
+                                            Name</label>
+                                        <input type="text" name="name" id="name-field" class="form-control" required="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email-field" class="pb-2" id="contatFormEmailIndex">Your
+                                            Email</label>
+                                        <input type="email" class="form-control" name="email" id="email-field"
+                                            required="">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="subject-field" class="pb-2"
+                                            id="contatFormSubjectIndex">Subject</label>
+                                        <input type="text" class="form-control" name="subject" id="subject-field"
+                                            required="">
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label for="message-field" class="pb-2"
+                                            id="contatFormMessageIndex">Message</label>
+                                        <textarea class="form-control" name="message" rows="10" id="message-field"
+                                            required=""></textarea>
+                                    </div>
+
+                                    <div class="col-md-12 text-center">
+                                        <div class="loading" style="display:none;">Loading</div>
+                                        <div class="error-message" style="display:none; color:red;"></div>
+                                        <div class="sent-message" style="display:none; color:green;">Your message has
+                                            been
+                                            sent.
+                                            Thank you!
+                                        </div>
+                                        <button type="submit" class="btn-contacts" id="contatFormButtonIndex">Send
+                                            Message</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                    </div><!-- End Contact Form -->
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Footer-->
+        <footer id="footer" class="footer">
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-6 col-md-12">
+                        <h4 id="footerTitleIndex">Follow Us</h4>
+                        <p id="footerSubtitleTitleIndex">Let’s stay connected—see what’s new!</p>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="social-links d-flex" style="float: inline-end;">
+                            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container copyright text-center mt-4">
+                <!-- Firuza Poladzade | ByteLab -->
+                ByteLab by <a href="https://byfiruza.cloud/" target="_blank">Firuza Polad</a>
+            </div>
+            </div>
+        </footer>
+        <!-- Back to Top Button -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../js/pdf-modal.js"></script>
+        <script src="../js/contact-us.js"></script>
+        <script src="../js/lang.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000,  // default duration
+                easing: 'ease-in-out',
+                once: true,      // animate only once
+                mirror: false    // do not animate when scrolling back
+            });
+
+            // window.addEventListener('load', () => {
+            //     AOS.refresh();  // ensures AOS recalculates positions
+            // });
+
+
+            (function () {
+                emailjs.init({
+                    publicKey: "35Z8XtGI0jqxLdatv",
+                });
+
+            })();
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            // window.addEventListener("scroll", () => {
+            //     if (window.scrollY > 300) {
+            //         backToTopBtn.style.display = "flex";
+            //     } else {
+            //         backToTopBtn.style.display = "none";
+            //     }
+            // });
+
+            // backToTopBtn.addEventListener("click", () => {
+            //     window.scrollTo({
+            //         top: 0,
+            //         behavior: "smooth"
+            //     });
+            // });
+
+
+        </script>
+
+    </body>
+
+    </html>
