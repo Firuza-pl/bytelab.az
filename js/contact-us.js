@@ -1,3 +1,6 @@
+// <!-- © 2025 Firuza Poladzade Jafarli - bytelab.az
+// All rights reserved.   -->
+
 document.getElementById("contact-form").addEventListener("submit", async function(e) {
     e.preventDefault();
 

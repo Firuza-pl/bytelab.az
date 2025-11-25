@@ -1,3 +1,6 @@
+// <!-- © 2025 Firuza Poladzade Jafarli - bytelab.az
+// All rights reserved.   -->
+
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".openPdf").forEach(function (item) {
 
@@ -8,15 +11,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // PDF file mapping
             const pdfFiles = {
-                pdfModal1: "../assets/img/doc/Syllabus-Backend.pdf",
-                pdfModal2: "../assets/img/doc/Syllabus-DB.pdf",
-                pdfModal3: "../assets/img/doc/Syllabus-NET.pdf"
+                pdfModal1: "../assets/img/doc/syllabus-csharp.jpg",
+                pdfModal2: "../assets/img/doc/syllabus-java.jpg",
+                pdfModal3: "../assets/img/doc/syllabus-db.jpg"
             };
 
             const titles = {
-                pdfModal1: "Syllabus – Programming Fundamentals",
-                pdfModal2: "Syllabus – Database Management",
-                pdfModal3: "Syllabus – .NET Framework"
+                pdfModal1: "Tədris Planı – Programlaşdırmanın əsasları (C# / .NET)  (Bütün hüquqlar qorunur-ByteLab)",
+                pdfModal2: "Tədris Planı – Programlaşdırmanın əsasları  (Java / Spring Boot) (Bütün hüquqlar qorunur-ByteLab)",
+                pdfModal3: "Tədris Planı – Verilənlər bazasının idarə olunması (Bütün hüquqlar qorunur-ByteLab)"
             };
 
             // Set modal content

@@ -1,3 +1,6 @@
+<!-- © 2025 Firuza Poladzade Jafarli - bytelab.az
+// All rights reserved.   -->
+
 <?php
 header("Access-Control-Allow-Origin: https://www.bytelab.az");
 header("Access-Control-Allow-Methods: POST");
@@ -9,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = htmlspecialchars($_POST["subject"]);
     $message = htmlspecialchars($_POST["message"]);
 
-    $to = "info@bytelab.az";  // Admin email
+    $to = "info@bytelab.az";  // 
     $headers = "From: info@bytelab.az\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
@@ -22,10 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <p><b>Mesaj:</b><br>$message</p>
     ";
 
-    // Admina göndər
+    // Admin
     $adminMail = mail($to, $subject, $body, $headers);
 
-    // Auto-reply istifadəçiyə
+    // Auto-reply 
     $replySubject = "ByteLab ilə əlaqə üçün təşəkkür edirik";
     $contactInfo = "
 <p><b>Daha tez əlaqə üçün bizə yazın</b></p>
@@ -35,12 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 ";
     $replyBody = "
-    <p>Hörmətli $name,</p>
+    <p>Hörmətli $name ,</p>
     <p>Bizimlə əlaqə saxladığınız üçün təşəkkür edirik! Mesajınızı aldıq və tezliklə sizinlə əlaqə saxlayacağıq.</p>
     <p>Hörmətlə,<br>ByteLab</p>
 <hr>
 $contactInfo
-<p>Hörmətlə, ByteLab</p>
     ";
     $replyHeaders = "From: info@bytelab.az\r\n";
     $replyHeaders .= "Content-Type: text/html; charset=UTF-8\r\n";

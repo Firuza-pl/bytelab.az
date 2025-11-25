@@ -1,4 +1,8 @@
- AOS.init({
+// <!-- © 2025 Firuza Poladzade Jafarli - bytelab.az
+// All rights reserved.   -->
+
+
+AOS.init({
             duration: 1000,  // default duration
             easing: 'ease-in-out',
             once: true,      // animate only once
