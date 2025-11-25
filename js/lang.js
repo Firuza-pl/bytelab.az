@@ -59,7 +59,6 @@ function changeLanguage(lang) {
       document.querySelector('#contactAddressTitleIndex').textContent = data.contactAddressTitleIndex;
       document.querySelector('#contactCallTitleIndex').textContent = data.contactCallTitleIndex;
       document.querySelector('#contactWpTitleIndex').textContent = data.contactWpTitleIndex;
-      document.querySelector('#contactAddressSubTitleIndex').textContent = data.contactAddressSubTitleIndex;
       document.querySelector('#contactWpSubTitleIndex').textContent = data.contactWpSubTitleIndex;
       document.querySelector('#contactWpSubTitleIndex').textContent = data.contactWpSubTitleIndex;
       document.querySelector('#contatFormNameIndex').textContent = data.contatFormNameIndex;
@@ -68,7 +67,6 @@ function changeLanguage(lang) {
       document.querySelector('#contatFormMessageIndex').textContent = data.contatFormMessageIndex;
       document.querySelector('#contatFormButtonIndex').textContent = data.contatFormButtonIndex;
       document.querySelector('#footerTitleIndex').textContent = data.footerTitleIndex;
-      document.querySelector('#footerSubtitleTitleIndex').textContent = data.footerSubtitleTitleIndex;
       document.querySelector('#portTitleIndex').textContent = data.portTitleIndex;
       document.querySelector('#portSubtitleIndex').textContent = data.portSubtitleIndex;
       document.querySelector('#portContact').textContent = data.portContact;

@@ -1,26 +1,37 @@
-  const form = document.getElementById('contact-form');
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // prevent page reload
+    const form = e.target;
+    const loading = form.querySelector(".loading");
+    const errorMsg = form.querySelector(".error-message");
+    const sentMsg = form.querySelector(".sent-message");
 
-    const loading = form.querySelector('.loading');
-    const errorMsg = form.querySelector('.error-message');
-    const sentMsg = form.querySelector('.sent-message');
+    loading.style.display = "block";
+    errorMsg.style.display = "none";
+    sentMsg.style.display = "none";
 
-    loading.style.display = 'block';
-    errorMsg.style.display = 'none';
-    sentMsg.style.display = 'none';
+    const formData = new FormData(form);
 
-    // Send form via EmailJS
-    emailjs.sendForm('service_60ydf29', 'template_l14jcdi', this)
-      .then(function() {
-        loading.style.display = 'none';
-        sentMsg.style.display = 'block';
-        form.reset();
-      }, function(err) {
-        loading.style.display = 'none';
-        errorMsg.textContent = 'There was an error sending your message. Please try again.';
-        errorMsg.style.display = 'block';
-        console.error('EmailJS error:', err);
-      });
-  });
+    try {
+        const res = await fetch("../contact.php", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await res.json();
+        loading.style.display = "none";
+
+        if(data.success){
+            sentMsg.style.display = "block";
+            form.reset();
+        } else {
+            errorMsg.textContent = "Xəta baş verdi, zəhmət olmasa yenidən cəhd edin.";
+            errorMsg.style.display = "block";
+        }
+    } catch(err){
+        loading.style.display = "none";
+        errorMsg.textContent = "Xəta baş verdi, zəhmət olmasa yenidən cəhd edin.";
+        errorMsg.style.display = "block";
+        console.error(err);
+    }
+});
