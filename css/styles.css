@@ -79,6 +79,7 @@
   }
 }
 
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -12909,10 +12910,37 @@ a:hover {
   transition: 0.3s;
 }
 
+#resource .nav-item .nav-link{
+  color: #14192d !important;
+}
+
+#resource .nav-item:hover .nav-link{
+  color:var(--bs-link-color) !important;
+}
+
 .about .read-more:hover {
   color: #ffffff;
   background: #284897d9;
 }
+
+#pdfContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+#pdfContent img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* adjust as you like */
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    padding: 6px;
+}
+
+
 
 .pdf-list {
   display: flex;

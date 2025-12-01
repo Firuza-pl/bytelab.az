@@ -1,6 +1,3 @@
-// <!-- © 2025 Firuza Poladzade Jafarli - bytelab.az
-// All rights reserved.   -->
-
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".openPdf").forEach(function (item) {
 
@@ -9,24 +6,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const target = this.dataset.target;
 
-            // PDF file mapping
+            // PDF & image file mapping
             const pdfFiles = {
-                pdfModal1: "../assets/img/doc/syllabus-csharp.jpg",
-                pdfModal2: "../assets/img/doc/syllabus-java.jpg",
-                pdfModal3: "../assets/img/doc/syllabus-db.jpg"
+                pdfModal1: [
+                    { thumb: "../assets/img/doc/diplom1.jpg", file: "../assets/img/doc/diplom1.jpg" },
+                    { thumb: "../assets/img/doc/diplom3.jpg", file: "../assets/img/doc/diplom3.jpg" },
+                    { thumb: "../assets/img/doc/diplom2.jpg", file: "../assets/img/doc/diplom2.jpg" },
+                    { thumb: "../assets/img/doc/Certificate-net.jpg", file: "../assets/img/doc/Certificate-net.pdf" }, // show png, open pdf
+                    { thumb: "../assets/img/doc/Certificate-db.jpg", file: "../assets/img/doc/Certificate-db.pdf" },   // show png, open pdf
+                    { thumb: "../assets/img/doc/Certificate-code.jpg", file: "../assets/img/doc/Certificate-code.jpg" },
+                    { thumb: "../assets/img/doc/Certificate-csharp.jpg", file: "../assets/img/doc/Certificate-csharp.pdf" } // show png, open pdf
+                ],
+                pdfModal2: [
+                    { thumb: "../assets/img/doc/plan-az.png", file: "../assets/img/doc/plan-az.png" },
+                    { thumb: "../assets/img/doc/alqo-az.png", file: "../assets/img/doc/alqo-az.png" },
+                    { thumb: "../assets/img/doc/charp-az.png", file: "../assets/img/doc/charp-az.png" },
+                    { thumb: "../assets/img/doc/net-az.png", file: "../assets/img/doc/net-az.png" },
+                    { thumb: "../assets/img/doc/api-az.png", file: "../assets/img/doc/api-az.png" },
+                    { thumb: "../assets/img/doc/sql-az.png", file: "../assets/img/doc/sql-az.png" },
+                    { thumb: "../assets/img/doc/java-az.png", file: "../assets/img/doc/java-az.png" }
+                ],
             };
 
             const titles = {
-                pdfModal1: "Tədris Planı – Programlaşdırmanın əsasları (C# / .NET)  (Bütün hüquqlar qorunur-ByteLab)",
-                pdfModal2: "Tədris Planı – Programlaşdırmanın əsasları  (Java / Spring Boot) (Bütün hüquqlar qorunur-ByteLab)",
-                pdfModal3: "Tədris Planı – Verilənlər bazasının idarə olunması (Bütün hüquqlar qorunur-ByteLab)"
+                pdfModal1: "Fayllar",
+                pdfModal2: "Tədris Planı"
             };
 
-            // Set modal content
-            document.getElementById("pdfFrame").src = pdfFiles[target];
+            const pdfFrame = document.getElementById("pdfFrame");
+            const modalBody = document.getElementById("pdfContent");
+
+            modalBody.innerHTML = "";
+            pdfFrame.style.display = "none";
+
+            if (Array.isArray(pdfFiles[target])) {
+                // MULTIPLE FILES → show as thumbnails
+                pdfFiles[target].forEach(item => {
+                    modalBody.innerHTML += `
+                        <a href="${item.file}" target="_blank">
+                            <img src="${item.thumb}" class="img-item">
+                        </a>
+                    `;
+                });
+            }
+
             document.getElementById("pdfTitle").textContent = titles[target];
 
-            // Open modal
             const modal = new bootstrap.Modal(document.getElementById("pdfModal"));
             modal.show();
         });
